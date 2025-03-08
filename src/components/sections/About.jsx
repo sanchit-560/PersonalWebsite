@@ -1,5 +1,4 @@
 import React from "react"
-import myImage from "../../assets/HomeImage.png";
 export const About  = ()=> {
     
     return(

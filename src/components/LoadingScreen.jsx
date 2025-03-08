@@ -1,5 +1,5 @@
 import React from "react";
-import { TypeWriter } from "./Typewriter.jsx";
+import { TypeWriter } from "./TypeWriter.jsx";
 
 export const LoadingScreen = () => {
     return (
