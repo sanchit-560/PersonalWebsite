@@ -1,5 +1,5 @@
-import { Card1} from "../Card1";
-import { Card2} from "../Card2";
+import { Card1} from "../Card1.jsx";
+import { Card2} from "../Card2.jsx";
 export const Projects = () => {
     return (
       <div className="flex flex-col items-center px-4 py-10 xl:px-12 xl:py-14 xl:pt-36">

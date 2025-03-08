@@ -1,10 +1,10 @@
 import { useState, useEffect } from 'react';
-import { LoadingScreen } from "./components/LoadingScreen";
-import { Navbar } from './components/Navbar';
-import { About } from './components/sections/About';
-import { Contact } from './components/sections/Contact';  // Corrected import
-import { Home } from './components/sections/Home';
-import {Projects} from './components/sections/Projects'
+import { LoadingScreen } from "./components/LoadingScreen.jsx";
+import { Navbar } from './components/Navbar.jsx';
+import { About } from './components/sections/About.jsx';
+import { Contact } from './components/sections/Contact.jsx'; 
+import { Home } from './components/sections/Home.jsx';
+import {Projects} from './components/sections/Projects.jsx'
 import './App.css';
 import './index.css';
 
