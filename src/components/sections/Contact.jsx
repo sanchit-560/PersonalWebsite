@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { ResumeButton } from "../ResumeButton.jsx";
 import emailjs from "emailjs-com";
-import { SubmitButton } from "../Submitbutton.jsx";
+import { SubmitButton } from "../SubmitButton.jsx";
 
 export const Contact = () => {
   const [formData, setFormData] = useState({
