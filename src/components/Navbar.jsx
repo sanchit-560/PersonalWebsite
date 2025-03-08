@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react"; // Importing icons
-import { Link } from "react-router-dom";
 import "../index.css"
 
 export const Navbar = () => {
