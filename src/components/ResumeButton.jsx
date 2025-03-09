@@ -17,7 +17,7 @@ export function ResumeButton() {
          d="M12 4v12m0 0l-4-4m4 4l4-4M4 16v4h16v-4"
          />
         </svg>
-        <a href="/Sanchit_Khosla_Resume.pdf" download="Sanchit_Khosla_Resume.pdf">Download file</a>
+        <a href="/Sanchit_Khosla_Resume.pdf" download="Sanchit_Khosla_Resume.pdf">Download My CV</a>
       </Button>
   );
 }

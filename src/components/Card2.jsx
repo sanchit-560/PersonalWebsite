@@ -13,8 +13,8 @@ import {
           <Typography variant="h5" color="blue-gray" className="mb-2">
           UTS Website Enhancement
           </Typography>
-          <Typography>
-          As a Junior Software Engineer at UTS, I enhanced the university’s website by resolving critical bugs and refining responsive UI components with React, TypeScript, and Tailwind CSS. This project ensured pixel-perfect alignment with Figma designs, boosting both student engagement and overall site performance.
+          <Typography className="text-xl">
+          As a Junior Software Engineer at UTS, I enhanced the university’s website by resolving critical bugs and refining responsive UI components with  <b className="text-xl font-weight: 700;">React, TypeScript, and Tailwind CSS.</b> This project ensured pixel-perfect alignment with Figma designs, boosting both student engagement and overall site performance.
           </Typography>
         </CardBody>
         <CardFooter className="pt-0">

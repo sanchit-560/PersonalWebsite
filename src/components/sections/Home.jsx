@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import  TypeWriter  from "../TypeWriter.jsx";
+import  {TypeWriter}  from "../TypeWriter.jsx";
 import myImage from "../../assets/about.png";
 
 

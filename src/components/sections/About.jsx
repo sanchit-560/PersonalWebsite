@@ -1,3 +1,4 @@
+import avatar from "../../assets/avatar.svg";
 import React from "react"
 export const About  = ()=> {
     
@@ -31,7 +32,7 @@ export const About  = ()=> {
           </div>
       </div>
       <div className="w-full md:w-1/3 flex justify-center items-center mt-12 md:mt-0">
-            <img src = "https://soumyajit.vercel.app/static/media/avatar.5852f40fbb38aa284829fa3fb7722225.svg" alt="Programming Image" className="max-h-1/2" />
+            <img src ={avatar}  alt="Programming Image" className="max-h-1/2" />
         </div>
     </div>
 

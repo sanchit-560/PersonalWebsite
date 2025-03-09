@@ -13,8 +13,8 @@ import {
           <Typography variant="h5" color="blue-gray" className="mb-2">
           Payment Solution App
           </Typography>
-          <Typography>
-          A mockup payments solution that demonstrates a full-stack approach to secure transactions. Built with Node.js, Express.js, and React, the app offers end-to-end functionality—from user signup to fund transfers—featuring JWT authentication and custom middleware for secure access.
+          <Typography className="text-xl">
+          A mockup payments solution that demonstrates a full-stack approach to secure transactions. Built with <b className="text-xl 	font-weight: 700;">Node.js, Express.js, and React,</b> the app offers end-to-end functionality—from user signup to fund transfers—featuring <b className="text-xl 	font-weight: 700;">JWT authentication</b> and custom middleware for secure access.
           </Typography>
         </CardBody>
         <CardFooter className="pt-0">

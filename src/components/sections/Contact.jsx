@@ -10,14 +10,12 @@ export const Contact = () => {
     message: "",
   });
 
-  const ServiceId = "service_1co6r4v";
-  const TemplateId = "template_b7djart";
-  const PublicKey = "VNkmaynOxN-LJbSgO";
+
 
   const handleSubmitForm = (e) => {
     e.preventDefault();
     emailjs
-      .sendForm(ServiceId, TemplateId, e.target, PublicKey)
+      .sendForm(import.meta.env.VITE_ServiceId, import.meta.env.VITE_TemplateId, e.target, import.meta.env.VITE_PublicKey)
       .then(() => {
         alert("Message Sent!");
         setFormData({ name: "", email: "", message: "" });
