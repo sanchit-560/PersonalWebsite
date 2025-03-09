@@ -10,7 +10,7 @@ export const About  = ()=> {
             <span className="text-[#00df9a]">INTRODUCE</span>
             <span className="text-[oklch(0.985 0 0)]"> MYSELF</span>
             <p className="text-xl pt-10 text-left">
-            I fell in love with programming, and I've learned enough along the way to keep that passion burning bright… or at least,
+            I fell in love with programming, and I've learned enough along the way to keep that passion burning bright…
             <i><b className="text-[#00df9a]"> or at least, that's what I like to believe 🤷‍♂️</b></i>
             <br></br>
             <br></br>
