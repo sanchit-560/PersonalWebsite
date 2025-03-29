@@ -1,5 +1,4 @@
 import { Button } from "@material-tailwind/react";
- 
 export function ResumeButton() {
   return (
       <Button className="flex items-center gap-3 bg-[#00df9a] rounded-xl m-2 cursor-pointer duration-300 hover:text-black :text-white">
@@ -17,7 +16,7 @@ export function ResumeButton() {
          d="M12 4v12m0 0l-4-4m4 4l4-4M4 16v4h16v-4"
          />
         </svg>
-        <a href="/Sanchit_Khosla_Resume.pdf" download="Sanchit_Khosla_Resume.pdf">Download My CV</a>
+        <a href="/PersonalWebsite/Sanchit_Khosla_Resume.pdf" download="Sanchit_Khosla_Resume.pdf">Download My CV</a>
       </Button>
   );
 }
