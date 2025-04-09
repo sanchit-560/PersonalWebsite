@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { LoadingScreen } from "./components/LoadingScreen.jsx";
+import { Loading } from "./components/Loading.jsx";
 import { Navbar } from './components/Navbar.jsx';
 import { About } from './components/sections/About.jsx';
 import { Contact } from './components/sections/Contact.jsx'; 
@@ -10,19 +10,24 @@ import './index.css';
 import { initGA } from './analytics.js';
 
 function App() {
-  const [isLoaded, setIsLoaded] = useState(true);
+  const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
+    // Initialize Google Analytics
+    initGA();
+
+    // Simulate loading time
     const timeout = setTimeout(() => {
-      setIsLoaded(false);
-    }, 4000);
+      setIsLoaded(true);
+    }, 2000);
+
     return () => clearTimeout(timeout);
   }, []);
 
   return (
     <>
-      {isLoaded ? (
-        <LoadingScreen />
+      {!isLoaded ? (
+        <Loading />
       ) : (
         <>
           <Navbar />
@@ -40,7 +45,7 @@ function App() {
               <Contact />
             </section>
           </div>
-          </>
+        </>
       )}
     </>
   );

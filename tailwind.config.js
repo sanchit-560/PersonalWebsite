@@ -8,7 +8,22 @@ export default withMT({
     "./node_modules/@material-tailwind/react/theme/components/**/*.{js,ts,jsx,tsx}"
   ],
   theme: {
-    extend: {},
+    extend: {
+      keyframes: {
+        spin: {
+          '0%': { transform: 'rotate(0deg)' },
+          '100%': { transform: 'rotate(360deg)' },
+        },
+        bounce: {
+          '0%, 100%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(-10px)' },
+        },
+      },
+      animation: {
+        'spin-slow': 'spin 3s linear infinite',
+        'bounce-slow': 'bounce 1s infinite',
+      },
+    },
   },
   plugins: [
     function ({ addUtilities }) {
