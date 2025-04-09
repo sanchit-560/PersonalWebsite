@@ -7,6 +7,7 @@ import { Home } from './components/sections/Home.jsx';
 import {Projects} from './components/sections/Projects.jsx'
 import './App.css';
 import './index.css';
+import { initGA } from './analytics.js';
 
 function App() {
   const [isLoaded, setIsLoaded] = useState(true);
