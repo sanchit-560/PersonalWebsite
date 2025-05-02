@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import  {TypeWriter}  from "../TypeWriter.jsx";
+import  {TypeWriter}  from "../Typewriter.jsx";
 import myImage from "../../assets/about.png";
 
 
@@ -10,7 +10,7 @@ export const Home = () => {
   useEffect(()=>{
         const timeOut = setTimeout(()=>{
             setTestIndex((prev)=>(prev+1) % textList.length)
-        },550);
+        },5550);
 
         return ()=>clearTimeout(timeOut)
   },[textIndex])
