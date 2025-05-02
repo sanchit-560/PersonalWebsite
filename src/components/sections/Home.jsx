@@ -10,7 +10,7 @@ export const Home = () => {
   useEffect(()=>{
         const timeOut = setTimeout(()=>{
             setTestIndex((prev)=>(prev+1) % textList.length)
-        },5500);
+        },550);
 
         return ()=>clearTimeout(timeOut)
   },[textIndex])
