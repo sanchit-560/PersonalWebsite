@@ -1,0 +1,29 @@
+FROM node:20-alpine AS builder
+WORKDIR /app
+
+# Copy everything
+COPY . .
+
+# Install dependencies
+RUN npm install
+
+# Build your Vite app
+RUN npm run build
+
+# ==========================
+
+# Create a new minimal image to serve
+FROM node:20-alpine AS production
+WORKDIR /app
+
+# Copy only what's needed from build container
+COPY --from=builder /app /app
+
+# Install serve dependency for vite preview
+RUN npm install -g serve
+
+# Expose the default vite preview port
+EXPOSE 4173
+
+# Run the built app using vite preview
+CMD ["npm", "run", "preview", "--", "--host"]
